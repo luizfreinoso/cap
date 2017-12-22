@@ -1,0 +1,38 @@
+{% extends "APTemplate.html" %}
+{% load staticfiles %}
+
+{% block scripts %}
+
+{% endblock %}
+
+{% block recursonome %}
+	Conteúdo Customizado
+{% endblock %}
+
+{% block recurso %}
+<div id="TEXTOhtml">
+	{% for dado in dadosAP %}
+		{{dado.value|safe}}
+	<hr>
+	<span id="idprodessor" style="float: left;">{{dado.user.username}}</span>
+	<span id="datamodificacao" style="float: right;">{{dado.data_ultima_modificacao}}</span>
+	{% endfor %}
+</div>
+{% endblock %}
+{%  block joyride %}
+<li data-id="TEXTOhtml" data-text="Próximo" data-prev-text="Anterior" data-options="tip_location: top">
+  <h4>TEXTO HTML</h4>
+  <p>Aqui é exposto um texto do professor..</p>
+</li>
+<li data-id="idprodessor" data-button="Próximo" data-prev-text="Anterior" data-options="tip_location:bottom; tip_animation:fade">
+  <h4>Professor/Autor</h4>
+  <p>Autor do texto.</p>
+</li>
+<li data-id="datamodificacao" data-button="Próximo" data-prev-text="Anterior" data-options="tip_location:bottom; tip_animation:fade">
+  <h4>Data Ultima Modificação</h4>
+  <p>Data da Ultima modificação.</p>
+</li>
+{% endblock %}
+{% block dados %}
+
+{% endblock %}

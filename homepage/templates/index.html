@@ -1,0 +1,127 @@
+{% load staticfiles %}
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en"
+	data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Language" content="pt-br" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords"
+	content="" />
+<meta name="rights" content="" />
+<meta name="author" content="" />
+<meta name="description"
+	content="" />
+<meta name="generator"
+	content="Django - Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.  - Version 1.6.5" />
+<meta property="og:site_name" content="">
+
+<meta http-equiv=’cache-control’ content=’no-cache’>
+<meta http-equiv=’expires’ content=’0′>
+<meta http-equiv=’pragma’ content=’no-cache’>
+
+<link rel="stylesheet" href="{% static 'css/foundation.css' %}" />
+<link rel="stylesheet" href="{% static 'css/banner-theme.css' %}" />
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+<script src="{% static 'js/vendor/modernizr.js' %}"></script>
+<script src="{% static 'js/vendor/jquery.js' %}"></script>
+</head>
+<body>
+	<link href='http://fonts.googleapis.com/css?family=Raleway'
+		rel='stylesheet' type='text/css'>
+	<section class="hero">
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="main-wrapper">
+					<h1>project Name</h1>
+					<h3>Ambiente Digital de Arendizagem [for?]</h3>
+					<hr>
+					<div class="row">
+						<div class="large-6 columns large-centered">
+							<ul class="button-group even-4">
+								<li><a href="/" class="button">Principal</a></li>
+								<li><a href="#" class="button">Sobre</a></li>
+								<li><a href="{% url 'login:login' %}" class="button button_acesso round">Acesso</a></li>
+								<li><a href="#" class="button">Contato</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-6 columns about-box">
+				<div class="black-box">
+					<h2>Podemos aprender a falar com as mãos.</h2>
+					<p style="text-align: justify;">Faça parte de nossa comunidade e colabore utilizando um sistema
+						colaborativo, onde você pode flexibilizar suas aulas e aprender ou ensinar
+						LIBRAS de forma interativa.
+					<p>Interessado em fazer parte da inclusão?</p>
+					<a href="{% url 'login:login' %}" class="secondary small button">Cadastre-se agora →</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="hero-content">
+		<div class="row">
+			<div class="large-8 columns about-content" style="text-align: justify;">
+				<h4>Project name</h4>
+				<p>O [Project] é um Ambiente Digital de Aprendizagem (ADA), onde alunos e professores interpretes 
+				através de atividades individuais e também colaborativas, corroboram para a aprendizagem 
+				de [objective]. O sistema é capaz de [features].</p>
+			</div>
+			<div class="large-4 columns">
+				<ul class="small-block-grid-2">
+					<li class="text-center"><span class="fa fa-users fa-5x"></span><br>Colaborativo</li>
+					<li class="text-center"><span class="fa fa-heartbeat fa-5x"></span><br>Inclusivo</li>
+					<li class="text-center"><img class="img_noShadowBox" src="{% static 'img/icones_acessibilidade.png' %}"><br>Acessível</li>
+					<li class="text-center"><span class="fa fa-tablet fa-5x"></span><br>Móvel</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="panel">
+				<div class="row">
+					<div class="large-9 columns">
+						<h4>Sistema ainda em desenvolvimento!</h4>
+						<p>Estamos trabalhando entre as 8 am - 17pm, Segunda a Sábado.</p>
+					</div>
+					<div class="large-3 columns">
+						<a href="#" class="radius button right">Contato</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="row">
+			<div class="large-6 columns">
+				<p>© MIT License. ADAAP. GitHub.</p>
+			</div>
+			<div class="large-6 columns">
+				<ul class="inline-list right">
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Termos de uso</a></li>
+					<li><a href="#">Politica de Privacidade</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<script src="{% static 'js/foundation.min.js' %}"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	<script src="{% static 'js/vendor/jquery.js' %}"></script>
+	<script src="{% static 'js/foundation.min.js' %}"></script>
+	<script>
+		$(document).foundation();
+
+		var doc = document.documentElement;
+		doc.setAttribute('data-useragent', navigator.userAgent);
+	</script>
+</body>
+</html>
